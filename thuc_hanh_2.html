@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Hinh_tron = function (ban_kinh){
+            this.ban_kinh = ban_kinh;
+            this.getBan_kinh = function () {
+                return this.ban_kinh;
+            }
+            this.getDien_tich = function () {
+                return Math.PI * ban_kinh * ban_kinh;
+            }
+        }
+        let hinh_tron = new Hinh_tron(2);
+        let ban_kinh = hinh_tron.getBan_kinh();
+        let dien_tich = hinh_tron.getDien_tich();
+        alert("ban_kinh: " + ban_kinh + "; dien_tich: " + dien_tich);
+    </script>
+</body>
+</html>

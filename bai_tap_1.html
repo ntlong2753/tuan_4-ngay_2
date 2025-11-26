@@ -5,6 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+<!--    <style>-->
+<!--        body { font-family: Arial,serif; }-->
+<!--        canvas { border: 1px solid #000; margin-top: 10px; }-->
+<!--    </style>-->
+    <canvas id="myCanvas" width="1280" height="600"
+            style="border: 1px solid #d3d3d3;"></canvas> <br>
     <script>
         let Rectangle = function(length, width) {
             this.width = width;
@@ -22,13 +28,25 @@
                 return 2 * (width + length);
             }
         }
-        let rectangle = new Rectangle(10, 10);
+        let rectangle = new Rectangle(1000, 500);
         let width = rectangle.getWidth();
         let length = rectangle.getLength();
         let dien_tich = rectangle.getDien_tich();
         let chu_vi = rectangle.getChu_vi();
-        document.write("Chieu_rong: " + width + "<br> Chieu_dai: " + length + "<br> Dien_tich: " + dien_tich + "<br> Chu_vi: " + chu_vi);
+        document.write("Chieu_rong: " + width + "<br> Chieu_dai: " + length +
+                  "<br> Dien_tich: " + dien_tich + "<br> Chu_vi: " + chu_vi);
         //alert("Chieu_rong: " + width + "; Chieu_dai: " + length + "; Dien_tich: " + dien_tich + "; Chu_vi: " + chu_vi);
+        Rectangle.prototype.draw = function(x, y, color) {
+            let canvas = document.getElementById("myCanvas");
+            let ctx = canvas.getContext("2d");
+            ctx.fillStyle = color || "blue";
+            ctx.fillRect(x, y, this.length, this.width);
+        }
+        // Tạo đối tượng hình chữ nhật
+        rectangle.displayInfo = function () {
+        }
+        rectangle.displayInfo();
+        rectangle.draw(50, 50, "orange");
     </script>
 </body>
 </html>

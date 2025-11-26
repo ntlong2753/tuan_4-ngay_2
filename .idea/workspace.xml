@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="19f58a48-08d7-4764-b044-ba72f39a1860" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/thuc_hanh_3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,9 +23,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/thuc_hanh_3.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="35ws78wDcCYL1fgDWjZyxh88YWe" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,6 +37,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.bai_tap_1.html.executor": "Run",
     "JavaScript Debug.lap_trinh_huong_doi_tuong.html (2).executor": "Run",
     "JavaScript Debug.lap_trinh_huong_doi_tuong.html.executor": "Run",
     "JavaScript Debug.thuc_hanh_1.html.executor": "Run",
@@ -43,37 +47,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="JavaScript Debug.thuc_hanh_3.html">
-    <configuration name="lap_trinh_huong_doi_tuong.html (2)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="ad48c93a-253c-433b-9771-33fbfadc1413" uri="http://localhost:63342/ngay_2/lap_trinh_huong_doi_tuong.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="lap_trinh_huong_doi_tuong.html" type="JavascriptDebugType" nameIsGenerated="true" engineId="ad48c93a-253c-433b-9771-33fbfadc1413" uri="http://localhost:63342/ngay_2/lap_trinh_huong_doi_tuong.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="thuc_hanh_1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="ad48c93a-253c-433b-9771-33fbfadc1413" uri="http://localhost:63342/ngay_2/thuc_hanh_1.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="thuc_hanh_2.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="ad48c93a-253c-433b-9771-33fbfadc1413" uri="http://localhost:63342/ngay_2/thuc_hanh_2.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="thuc_hanh_3.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="ad48c93a-253c-433b-9771-33fbfadc1413" uri="http://localhost:63342/ngay_2/thuc_hanh_3.html" useBuiltInWebServerPort="true">
+  <component name="RunManager">
+    <configuration name="bai_tap_1.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" engineId="ad48c93a-253c-433b-9771-33fbfadc1413" uri="http://localhost:63342/ngay_2/bai_tap_1.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.thuc_hanh_3.html" />
-        <item itemvalue="JavaScript Debug.thuc_hanh_2.html" />
-        <item itemvalue="JavaScript Debug.thuc_hanh_1.html" />
-        <item itemvalue="JavaScript Debug.lap_trinh_huong_doi_tuong.html (2)" />
+        <item itemvalue="JavaScript Debug.bai_tap_1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -91,7 +83,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1764032298713</updated>
-      <workItem from="1764032299739" duration="8014000" />
+      <workItem from="1764032299739" duration="11287000" />
+      <workItem from="1764052827527" duration="3106000" />
+      <workItem from="1764120128608" duration="2023000" />
     </task>
     <servers />
   </component>

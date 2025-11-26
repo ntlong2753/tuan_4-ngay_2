@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f58a48-08d7-4764-b044-ba72f39a1860" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/bai_tap_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="19f58a48-08d7-4764-b044-ba72f39a1860" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +87,7 @@
       <updated>1764032298713</updated>
       <workItem from="1764032299739" duration="11287000" />
       <workItem from="1764052827527" duration="3106000" />
-      <workItem from="1764120128608" duration="6227000" />
+      <workItem from="1764120128608" duration="6526000" />
     </task>
     <servers />
   </component>

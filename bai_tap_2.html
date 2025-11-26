@@ -12,10 +12,10 @@
                 return this.c;
             }
             this.getFahrenheit = function () {
-                return (9/5) * c + 32;
+                return (9/5) * this.c + 32;
             }
             this.getKelvin = function () {
-                return c + 273.15;
+                return this.c + 273.15;
             }
             this.setC = function (c) {
                 this.c = c;

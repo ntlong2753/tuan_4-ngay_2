@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Giao tiếp giữa hai điện thoại</h2>
+    <div class="phone" id="nokiaInfo"></div>
+    <div class="phone" id="iphoneInfo"></div>
+    <button onclick="simulateMessaging()">Gửi tin nhắn từ Nokia đến iPhone</button>
+
+    <script>
+        function Mobile(name) {
+            this.name = name;
+            this.battery = 100;
+            this.inbox = [];
+            this.draft = "";
+            this.isOn = true;
+        }
+
+        Mobile.checkBattery = function() {
+            return this.battery;
+        };
+
+        Mobile.togglePower = function() {
+            this.isOn = !this.isOn;
+        };
+
+        Mobile.useBattery = function() {
+            if (this.battery > 0) {
+                this.battery--;
+            }
+            if (this.battery === 0) {
+                this.isOn = false;
+            }
+        };
+
+        Mobile.writeMessage = function(message) {
+            if (!this.isOn) return;
+            this.draft = message;
+            this.useBattery();
+        };
+
+        Mobile.receiveMessage = function(message) {
+            if (!this.isOn) return;
+            this.inbox.push(message);
+            this.useBattery();
+        };
+
+        Mobile.sendMessage = function(receiver) {
+            if (!this.isOn || this.draft === "") return;
+            receiver.receiveMessage(this.name + " gửi: " + this.draft);
+            this.draft = "";
+            this.useBattery();
+        };
+
+        Mobile.displayInfo = function(elementId) {
+            let info = "<strong>" + this.name + "</strong><br>" +
+                "Pin: " + this.battery + "<br>" +
+                "Trạng thái: " + (this.isOn ? "Bật" : "Tắt") + "<br>" +
+                "Tin nhắn đang soạn: " + this.draft + "<br>" +
+                "Hộp thư đến:<br>" + this.inbox.join("<br>");
+            document.getElementById(elementId).innerHTML = info;
+        };
+
+        // Tạo hai điện thoại
+        let nokia = new Mobile("Nokia");
+        let iphone = new Mobile("iPhone");
+
+        // Hàm mô phỏng gửi tin nhắn
+        function simulateMessaging() {
+            nokia.writeMessage("Chào iPhone nhé!");
+            nokia.sendMessage(iphone);
+            nokia.displayInfo("nokiaInfo");
+            iphone.displayInfo("iphoneInfo");
+        }
+        // Hiển thị ban đầu
+        nokia.displayInfo("nokiaInfo");
+        iphone.displayInfo("iphoneInfo");
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let Celsius = function (c) {
+            this.c = c;
+            this.getC = function () {
+                return this.c;
+            }
+            this.getFahrenheit = function () {
+                return (9/5) * c + 32;
+            }
+            this.getKelvin = function () {
+                return c + 273.15;
+            }
+            this.setC = function (c) {
+                this.c = c;
+            }
+        }
+        let celsius = new Celsius(25);
+        celsius.setC(30);
+        let c = celsius.getC();
+        let f = celsius.getFahrenheit();
+        let k = celsius.getKelvin();
+        document.write("- Nhiệt độ C: " + c + "°C" + ". Chuyển đổi sang độ F và K lần lượt là:"
+                        + "<br>" + " => Fahrenheit: " + f + " F" + "; Kelvin: " + k + " K");
+    </script>
+</body>
+</html>

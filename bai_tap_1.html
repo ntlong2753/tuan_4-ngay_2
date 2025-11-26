@@ -27,14 +27,22 @@
             this.getChu_vi = function() {
                 return 2 * (width + length);
             }
+            this.setLength = function (length) {
+                this.length = length;
+            }
+            this.setWidth = function (width) {
+                this.width = width;
+            }
         }
         let rectangle = new Rectangle(1000, 500);
+        rectangle.setLength(1010);
+        rectangle.setWidth(510);
         let width = rectangle.getWidth();
         let length = rectangle.getLength();
         let dien_tich = rectangle.getDien_tich();
         let chu_vi = rectangle.getChu_vi();
-        document.write("Chieu_rong: " + width + "<br> Chieu_dai: " + length +
-                  "<br> Dien_tich: " + dien_tich + "<br> Chu_vi: " + chu_vi);
+        document.write("Chieu_dai: " + length + "<br> Chieu_rong: " + width +
+                    "<br> Chu_vi: " + chu_vi + "<br> Dien_tich: " + dien_tich);
         //alert("Chieu_rong: " + width + "; Chieu_dai: " + length + "; Dien_tich: " + dien_tich + "; Chu_vi: " + chu_vi);
         Rectangle.prototype.draw = function(x, y, color) {
             let canvas = document.getElementById("myCanvas");
